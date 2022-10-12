@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+.imghead {
+    height: 60px;
+    width: 120px;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.left #menu {
+    padding: 0 7px;
+    cursor: pointer;
+}
+.search {
+    display: flex;
+}
+.search form {
+    display: flex;
+    border: 1px solid #ddd;
+    height: 45px;
+}
+.search input {
+    width: 35vw;
+    padding: 10px;
+    border: 0;
+    height: 100%;
+    border-radius: 2px;
+}
+input:focus {
+    outline: none;
+    border: 1px solid #ddd;
+}
+.search button {
+    height: 100%;
+    width: 60px;
+    border: none;
+}
+.top {
+    margin-top: 10px;
+}
+.material-icons {
+    color: rgb(100, 100, 100);
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+/*Container*/
+.container {
+    height: 100%;
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+/*Sidebar*/
+.sidebar {
+    height: 100%;
+    max-width: 200px;
+    background-color: white;
+    overflow-y: scroll;
+    display: flex;
+    position: fixed;
+    margin-top: 60px;
+}
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 15px 0;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+.nav-link span {
+    margin-left: 12px;
+    font-size: 14px;
+}
+.nav-link:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+}
+.active {
+    background: #e5e5e5;
+    font-weight: bold;
+}
+hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+    margin: 10px 0 10px 0;
+}
+.nav p {
+    padding: 0 16px;
+    margin-bottom: 10px;
+}
+.ava img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 0 8px;
+}
+
+/*Sidebar2*/
+.sidebar2 {
+    height: 100%;
+    max-width: 100px;
+    background-color: white;
+    display: none;
+    position: fixed;
+    margin-top: 60px;
+}
+.nav-link2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+}
+.nav-link2:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+}
+
+/*Main*/
+.main {
+    background-color: #f9f9f9;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+/*Menu Content*/
+.menu-content {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 15px 15px;
+    line-height: 32px;
+    position: fixed;
+    margin-top: 60px;
+    margin-left: 180px;
+}
+.bt {
+    background-color: #ddd;
+    border-radius: 20px;
+    border: 1px solid #f9f9f9;
+    line-height: 20px;
+    padding: 4px 10px;
+    margin-top: 6px;
+    font-size: 14px;
+    font-family: Roboto;
+    display: inline-block   ;
+    justify-content: space-around;
+}
+.fi {
+    margin-left: 8px;
+}
+.cont {
+    margin-left: 20px ;
+}
+.fi:hover {
+    cursor: pointer;
+}
+.cont:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+}
+.act {
+    background-color: black;
+    color: white;
+}
+
+/*Content*/
+.content {
+    background-color: #f9f9f9;
+    height: 100%;
+    padding: 15px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+    margin-left: 180px;
+    margin-top: 120px;
+}
+.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.video {
+    flex-basis: 24%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.thumbnail {
+    width: 100%;
+    height: 170px;
+}
+.thumbnail :hover {
+    width: 101%;
+    height: 172px;
+}
+
+.thumbnail img {
+    height: 94%;
+    width: 100%;
+}
+.author img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    margin: 12px 12px 0 0;
+}
+.details {
+    display: flex;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    padding-right: 24px;
+    margin-top: 8px;
+}
+.title h3 {
+    color: rgb(3, 3, 3);
+    line-height: 20px;
+    font-size: 14px;
+}
+.title a, span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    line-height: 18px;
+}
+.title a {
+    margin: 0 1.2px 0 0;
+    padding: 0 1.2px 0 0;
+}
+
+.MyClass .sidebar{
+    display: none;
+}
+.MyClass .sidebar2{
+    display: flex;
+}
+.MyClass .content{
+    margin-left: 80px;
+}
+.MyClass .menu-content {
+    margin-left: 80px;
+}
+/*Responsive*/
+@media screen and (max-width: 1312px) {
+    .sidebar {
+        display: none;
+    }
+    .sidebar2 {
+        display: flex;
+    }
+    .menu-content {
+        margin-left: 80px;
+    }
+    .content {
+        margin-left: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 1132px) {
+    .video {
+        flex-basis: 32.5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video {
+        flex-basis: 48%;
+    }
+    .content {
+        margin: 50px 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .video {
+        flex-basis: 96%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .sidebar2 {
+        display: none;
+    }
+    .search input {
+        display: none;
+    }
+    .menu-content {
+        display: none;
+    }
+    .main {
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+    .search input{
+        display: none;
+    }
+    .menu-content {
+        display: none;
+    }
+    #keyboard {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .video {
+        flex: 100%;
+    }
+    .sidebar {
+        display: none;
+    }
+    .search input{
+        display: none;
+    }
+    .menu-content {
+        display: none;
+    }
+    #keyboard {
+        display: none;
+    }
+    #mic {
+        display: none;
+    }
+    #bell {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .video {
+        flex: 100%;
+    }
+    .sidebar {
+        display: none;
+    }
+    .search input{
+        display: none;
+    }
+    .menu-content {
+        display: none;
+    }
+    #keyboard {
+        display: none;
+    }
+    #mic {
+        display: none;
+    }
+    #bell {
+        display: none;
+    }
+    #app {
+        display: none;
+    }
+}
+
+
+

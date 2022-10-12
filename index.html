@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Youtube</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo left">
+            <i id="menu" class="material-icons" 
+            onclick ="myToggle()">menu</i>
+            <img class="imghead" src="logo_youtube.png" alt="Youtube">
+        </div>
+
+        <div class="search center">
+            <form action="">
+                <input type="text" placeholder="Tìm kiếm">
+                <i id="keyboard" class="material-icons top">keyboard</i>
+                <button>
+                    <i class="material-icons">search</i>
+                </button>
+            </form>
+            <i id="mic" class="material-icons top">mic</i>
+        </div>
+
+        <div class="icons right">
+            <i id="app" class="material-icons">video_call</i>
+            <!--- <i class="material-icons">apps</i> -->
+            <i id="bell" class="material-icons">notifications</i>
+            <i class="material-icons">account_circle</i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="nav">
+                <a class="nav-link active">
+                    <i class="material-icons">home</i> 
+                    <span>Trang chủ</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">explore</i> 
+                    <span>Khám phá</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">play_circle</i> 
+                    <span>Shorts</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">subscriptions</i> 
+                    <span>Đăng ký</span>
+                </a>
+                <hr>
+                <a class="nav-link">
+                    <i class="material-icons">video_library</i> 
+                    <span>Thư viện</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">history</i> 
+                    <span>Video đã xem</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">slideshow</i> 
+                    <span>Video của bạn</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">schedule</i> 
+                    <span>Xem sau</span>
+                </a>
+                <a class="nav-link">
+                    <i class="material-icons">thumb_up</i> 
+                    <span>Video đã thích</span>
+                </a>
+                <hr>
+                <div class="sub">
+                    <p>KÊNH ĐĂNG KÝ<p>
+                    <div>
+                        <div class="nav-link">
+                            <div class="ava">
+                                <img src="hd_profile.jpg" alt="">                        
+                            </div>
+                            <span>Hoàng Dũng</span>                               
+                        </div>
+                        <div class="nav-link">
+                            <div class="ava">
+                                <img src="hd_profile.jpg" alt="">                        
+                            </div>
+                            <span>Hoàng Dũng</span>                               
+                        </div>
+                        <div class="nav-link">
+                            <div class="ava">
+                                <img src="hd_profile.jpg" alt="">                        
+                            </div>
+                            <span>Hoàng Dũng</span>                               
+                        </div>
+                        <div class="nav-link">
+                            <div class="ava">
+                                <img src="hd_profile.jpg" alt="">                        
+                            </div>
+                            <span>Hoàng Dũng</span>                               
+                        </div>
+                    </div>
+                </div>           
+            </div>
+        </div>
+
+        <div class="sidebar2">
+            <div class="nav">
+                <div class="nav-link2">
+                    <i class="material-icons">home</i> 
+                    <span>Trang chủ</span>
+                </div>
+                <a class="nav-link2">
+                    <i class="material-icons">explore</i> 
+                    <span>Khám phá</span>
+                </a>
+                <a class="nav-link2">
+                    <i class="material-icons">play_circle</i> 
+                    <span>Shorts</span>
+                </a>
+                <a class="nav-link2">
+                    <i class="material-icons">subscriptions</i> 
+                    <span>Đăng ký</span>
+                </a>
+                <a class="nav-link2 ">
+                    <i class="material-icons">video_library</i> 
+                    <span>Thư viện</span>
+                </a>
+            </div>
+        </div>
+    
+        <div class="main">
+            <div class="menu-content">
+                <button class="bt fi act">Tất cả</button>
+                <button class="bt cont">Danh sách kết hợp</button>
+                <button class="bt cont">Âm nhạc</button>
+                <button class="bt cont">Trực tiếp</button>
+                <button class="bt cont">Trò chơi</button>
+                <button class="bt cont">Hài kịch tình huống</button>
+                <button class="bt cont">Đọc rap</button>
+            </div>
+            <div class="content">    
+                <div class="videos">
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="thumbnail">
+                            <img src="nangtho.webp" alt="">
+                        </div>
+            
+                        <div class="details">
+                            <div class="author">
+                                <img src="hd_profile.jpg" alt="">
+                            </div>
+            
+                            <div class="title">
+                                <h3>Nàng Thơ | Hoàng Dũng | Official MV</h3>
+                                <a href="">Hoàng Dũng <i class="material-icons" style="font-size: 12px; padding: 0px">music_note</i> </a>
+                                <span>103 Tr lượt xem • 2 năm trước</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+</body>
+</html>
